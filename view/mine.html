@@ -1,0 +1,113 @@
+<div id="mine">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+		</li>
+		<li>
+			<span>我的果园</span>
+		</li>
+		<li>
+			<a href="#/cart">
+				<span class="cart-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+	<div class="photo">
+		<div>
+			<img src="https://imgqn7.fruitday.com/images/2017-01-18/37fc9af568fcc070b5357cb0f3a724be.png" onerror="this.src='../images/emptyList.png'" alt="">
+		</div>
+		<p>18560461926</p>
+	</div>
+	<ul class="mine-ul mine-order">
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>我的订单</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>绑定手机</span>
+				<span></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="mine-ul mine-vip">
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>会员等级</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>积分</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>余额</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>优惠券</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="mine-li">
+			<a href="javascript:void(0)">
+				<span></span>
+				<span>我的赠品</span>
+				<span></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="mine-ul mine-aboutUs">
+		<li class="mine-li">
+			<a href="tel:10086">
+				<span></span>
+				<span class="tel">关于我们&nbsp;Tel：10086</span>
+			</a>
+		</li>
+	</ul>
+	<div class="cancel" ng-click="mineCtrl.leaveFlag = true">注销</div>
+
+	<div class="blank"></div>
+
+	<div class="alert" ng-show="mineCtrl.leaveFlag">
+		<p><span></span>亲，您真的要退出吗？</p>
+		<hr>
+		<button><a href="#/login">确定</a></button>
+		<button ng-click="mineCtrl.leaveFlag = false">取消</button>	
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

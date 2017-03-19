@@ -1,0 +1,22 @@
+@font-face {font-family: 'tiantianguoyuan-search';src: url('../font/icomoon.woff') format("truetype");}
+body{background: white;}
+#searchD .search-box{width: 10.0rem;height: 1.5625rem;}
+#searchD .search{width: 9.6875rem;height: 0.8125rem;padding: 0.21875rem 0.15625rem;background-color: #41A931;list-style: none;display: flex;justify-content: space-between;position: fixed;top: 0;z-index: 5}
+#searchD .search li span{font-family: "tiantianguoyuan-search";font-size: 0.5rem;width: 0.9375rem;height: 0.9375rem;color: #eef7ea;line-height: 0.9375rem;}
+#searchD .home-icon::before{content:"\e60b";}
+#searchD .mine-icon::before{content:"\e60c";}
+#searchD .cart-icon::before{content:"\e60d";}
+
+#searchD .cart-list{width: 10.0rem;background: white;}
+#searchD .cart-list-li{width:9.0625rem;height: 2.65625rem;padding: 0.15625rem;margin: 0.15625rem auto;border-bottom: 0.03125rem solid #ddd;position: relative;display: flex;justify-content: space-between;}
+#searchD .list-li-img{width: 2.65625rem;height: 2.65625rem;}
+#searchD .label{height: 0.6rem;color: white;background: red;padding: 0.09375rem;position: absolute;top: 0.15625rem;left: 0.15625rem;}
+#searchD .list-li-div{width: 6.40625rem;height: 100%;padding: 0 0.15625rem;}
+#searchD .list-li-div>*{margin: 0.15625rem 0;}
+#searchD .list-li-div h4{color: #999;}
+#searchD .list-li-div h2{color: orange;}
+#searchD .cart-add{font-family: "tiantianguoyuan-search";font-size: 0.5rem;display:block;width: 0.59375rem;height: 0.75rem;color: #41a931;position: absolute;right: 0;bottom: 0.15625rem;}
+#searchD .cart-add::before{content:"\e60d";}
+
+#searchD .class2{background: red;}
+#searchD .class1{background: #41a931;}

@@ -1,0 +1,87 @@
+<div id="submit">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+		</li>
+		<li>
+			<span>订单详情</span>
+		</li>
+		<li>
+			<a href="#/cart">
+				<span class="back-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+	<ul class="submit-ul submit-order">
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>送货地址</span>
+				<span>请选择></span>
+			</a>
+		</li>
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>配送时间</span>
+				<span>请选择></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="submit-ul submit-vip">
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>支付方式</span>
+				<span>请选择></span>
+			</a>
+		</li>
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>使用优惠券</span>
+				<span>请选择></span>
+			</a>
+		</li>
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>使用积分（最多可抵扣：{{}}）</span>
+				<span></span>
+			</a>
+		</li>
+		<li class="submit-li">
+			<a href="javascript:void(0)">
+				<span>是否开发票</span>
+				<span></span>
+			</a>
+		</li>
+	</ul>
+	<ul class="cart-list">
+		<li class="cart-list-li" ng-repeat="item in submitCtrl.submitProduct track by $index">
+			<a href="javascript:void(0)">
+				<img class="list-li-img" ng-src="{{ item.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="">
+			</a>
+			<span class="label">新品</span>
+			<div class="list-li-div">
+				<h3>{{ item.name }}</h3>
+				<h4>规格：{{ item.guige }}</h4>
+				<h2>￥{{ item.price }}</h2>
+			</div>
+		</li>
+	</ul>
+	<div class="blank"></div>
+	
+	<div class="price">
+		<button ng-click="submitCtrl.alertFlag = true">提交订单</button>
+		<p class="price-count">总计：￥<span>{{  }}</span></p>
+	</div>
+	<div class="alert" ng-show="submitCtrl.alertFlag">
+		<p><span></span>亲，请填写完整信息</p>
+		<hr>
+		<button ng-click="submitCtrl.alertFlag = false">确定</button>	
+	</div>
+</div>
+
+
+
+
+

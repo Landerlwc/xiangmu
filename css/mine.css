@@ -1,0 +1,29 @@
+@font-face {font-family: 'tiantianguoyuan-mine';src: url('../font/icomoon.woff') format("truetype");}
+#mine .search-box{width: 10.0rem;height: 1.5625rem;}
+#mine .search{width: 9.6875rem;height: 0.8125rem;padding: 0.21875rem 0.15625rem;background-color: #41A931;list-style: none;display: flex;justify-content: space-between;position: fixed;top: 0;} 
+#mine .search li span{font-family: "tiantianguoyuan-mine";font-size: 0.5rem;width: 0.9375rem;height: 0.9375rem;color: #eef7ea;line-height: 0.9375rem;}
+#mine .home-icon::before{content:"\e60b";}
+#mine .cart-icon::before{content:"\e60d";}
+
+#mine .photo{width: 10.0rem;height: 3.25rem;padding: 0.46875rem 0;text-align: center;}
+#mine .photo div{width: 2.5rem;height: 2.5rem;border-radius: 50%;border: 2px solid white;margin: 0 auto;}
+#mine .photo div img{width: 2.5rem;height: 2.5rem;}
+#mine .photo p{width: 3.125rem;font-size: 0.5rem;margin: 0.3125rem auto;}
+
+#mine .mine-ul{background: white;width: 9.375rem;list-style: none;margin: 0.3125rem auto;}
+#mine .mine-ul li{width: 8.75rem;height: 1.25rem;border-top: 1px solid #ddd;font-size: 0.375rem;line-height: 1.25rem;margin: 0 0.3125rem;}
+#mine .mine-ul li:nth-child(1){border-top: none;}
+#mine .mine-li a{color: #000;}
+#mine .mine-li a span:nth-child(1){font-family: 'tiantianguoyuan-mine';font-size: 0.4375rem;color: #999;}
+#mine .mine-li a span:nth-child(1)::before{content:'\e60c';}
+#mine .tel{color: orange;}
+
+#mine .cancel{width: 9.375rem;background: orange;color: white;line-height: 1.09375rem;text-align: center;font-size: 0.4375rem;border-radius: 0.09375rem/0.09375rem;margin: 0 auto;}
+
+#mine .blank{width: 9.375rem;height: 0.625rem;background: white;margin:0.3125rem auto;border-radius: 0.09375rem/0.09375rem;}
+
+#mine .alert{width: 8.125rem;height: 4.0625rem;padding: 0.3125rem;background: rgba(0, 0, 0, .6);border-radius: 0.15625rem;position: fixed;top: 30%;left: 6.25%;text-align: center;}
+
+#mine .alert p{font-size: 0.5rem;color: #fdfdfd;text-align: center;line-height: 0.9375rem;margin: 0.625rem 0;}
+#mine .alert button{width: 2.5rem;height: 1.09375rem;background: #fdfdfd;font-size: 0.5rem;color: gray;text-align: center;line-height: 0.9375rem;margin: 0.15625rem 0.15625rem;outline: none;border-radius: 0.15625rem;}
+#mine .alert button a{color: gray;}

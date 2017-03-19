@@ -1,0 +1,38 @@
+<div id="searchD">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+		</li>
+		<li>
+			<span class="title">{{ searchDCtrl.title }}</span>
+		</li>
+		<li>
+			<a href="#/cart">
+				<span class="cart-icon"></span>
+			</a>&nbsp;&nbsp;&nbsp;
+			<a href="#/mine">
+				<span class="mine-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+
+	<ul class="cart-list">
+		<li class="cart-list-li" ng-repeat="hot in searchDCtrl.getHotDetail">
+				<a href="#/detail/{{ hot.productId }}">
+					<img class="list-li-img" ng-src="{{ hot.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="">
+				</a>
+				<span class="label" ng-class="{true : 'class1', false : 'class2'}[$even]">{{ hot.chandi }}</span>
+				<div class="list-li-div">
+					<h3>{{ hot.name }}</h3>
+					<h4>规格：{{ hot.guige }}</h4>
+					<h2>￥{{ hot.price }}</h3>
+					<span class="cart-add"></span>
+				</div>
+		</li>
+	</ul>
+	
+
+</div>

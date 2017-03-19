@@ -1,0 +1,75 @@
+<div id="cart">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+		</li>
+		<li>
+			<span class="">购物车</span>
+		</li>
+		<li>
+			<a href="#/mine">
+				<span class="mine-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+
+	<div class="content" ng-hide="cartCtrl.cartFlag">
+		<ul class="cart-list">
+			<li class="cart-list-li" ng-repeat="item in cartCtrl.productList track by $index">
+				<a href="javascript:void(0)">
+					<img class="list-li-img" ng-src="{{ item.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="">
+				</a>
+				<span class="label">新品</span>
+				<div class="list-li-div">
+					<h3>{{ item.name }}</h3>
+					<h4>规格：{{ item.guige }}</h4>
+					<h2>￥{{ item.price }}</h2>
+					<img class="cart-dele" src="../images/dele.png" alt="" ng-click="cartCtrl.delProduct(item.productId)">
+					<table class="cart-count" cellpadding="0" cellspacing="0">
+						<tr> 
+							<td class="num-minus" ng-click="cartCtrl.mul(item.productId)">-</td>
+							<td class="count-num"><input type="text" value="1"
+							disabled="disable" ng-model="item.buyNum"></td>
+							<td class="num-add" ng-click="cartCtrl.add(item.productId)">+</td>
+						</tr>
+					</table>
+				</div>
+			</li>
+		</ul>
+
+		<ul class="cart-list cart-exchange">
+			<li class="cart-list-li exchange-li">
+				<a href="javascript:void(0)">
+					<i>换</i>
+					全场满99加29.9元换购新西兰绿果12个奇偶；
+				</a>
+			</li>
+		</ul>
+
+		<div class="price">
+			<button ng-click=""><a href="#/submit">去结算</a></button>
+			<p class="price-count">总计：￥<span>{{ cartCtrl.sum() }}</span></p>
+			<p class="price-prefe">商品总价￥<span>{{ cartCtrl.sum() - cartCtrl.cheap() }}</span>，优惠￥<span>{{ cartCtrl.cheap() }}</span></p>
+		</div>
+
+		<!-- 删除确认模块 -->
+		<div class="del-product" ng-show="cartCtrl.delFlag">
+			<p><span></span>亲，您真的要删除吗？</p>
+			<hr>
+			<button ng-click="cartCtrl.delConfirm()">确定</button>
+			<button ng-click="cartCtrl.delFlag = false">取消</button>	
+		</div>
+	</div>
+
+	<div class="empty" ng-show="cartCtrl.cartFlag">
+		<div class="empty-content">
+			<span class="cart-icon"></span>
+			<p>您的购物车现在是空的噢~<br><span>现在就去逛逛吧~</span></p>
+			<span class="go-shopping"><a ng-href="#/home">去逛逛</a></span>
+		</div>	
+	</div>
+
+</div>

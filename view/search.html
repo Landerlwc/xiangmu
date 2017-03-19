@@ -1,0 +1,17 @@
+<div id="search">
+	<ul class="search-top">
+		<li>
+			<a href="#/home">返回</a>
+		</li>
+		<li>
+			<input type="text" placeholder="新鲜水果、生鲜">
+		</li>
+		<li>
+			<span>搜索</span>
+		</li>
+	</ul>
+	<h3>热门搜索</h3>
+	<ul class="hot-title">
+		<li ng-repeat="hot in searchCtrl.hotTitle"><a href="#/searchDetail/{{ hot }}">{{ hot }}</a></li>
+	</ul>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>天天果园触屏版</title>
+	<link rel="shorcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="lib/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="lib/flexible.js"></script>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+</head>
+<body>
+
+	<div ng-view></div>
+
+	<div id="footer" ng-show="rootIsFooterShow">
+		<ul>
+			<li>
+				<a href="#/home" style="color: green"><span class="home-icon"></span><br>首页</a>
+			</li>
+			<li>
+				<a href="#/class"><span class="class-icon"></span><br>分类</a>
+			</li>
+			<li>
+				<a href="#/cart"><span class="cart-icon"></span><br>购物车</a>
+			</li>
+			<li>
+				<a href="#/mine"><span class="mine-icon"></span><br>我的果园</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular-route.js" ></script>
+	<script type="text/javascript" src="lib/angular-ui-router.js"></script>
+	<script type="text/javascript" src="lib/angular-css.js" ></script>
+		<script type="text/javascript" src="../lib/swiper-3.3.1.min.js"></script>
+	<script type="text/javascript" src="app.js" ></script>
+	<script type="text/javascript" src="js/service.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="lib/jquery.lazyload.min.js"></script>
+
+</body>
+</html>

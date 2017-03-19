@@ -1,0 +1,17 @@
+@font-face {font-family: 'tiantianguoyuan-login';src: url('../font/icomoon.woff') format("truetype");}
+
+body{background: #fff;border-top: 1px solid transparent;}
+#login .zhanghao a span{font-family: "tiantianguoyuan-login";font-size: 0.625rem;color: #41a931;}
+#login .zhanghao a span::before{content:"\e60b";}
+#login .zhanghao{width: 10.0rem;text-align: center;color: #41a931;font-size: 0.5625rem;margin: 1.5625rem 0px;}
+#login .login-ul{width: 9.375rem;height: 2.8125rem;padding: 0.9375rem 0.3125rem 0rem;}
+#login .login-ul li{width: 100%;height: 0.9375rem;border-bottom: 1px solid #ddd;margin: 0.3125rem 0;display: flex;justify-content: space-between;}
+#login .login-ul li span{font-family: "tiantianguoyuan-login";font-size: 0.625rem;color: #999;}
+#login .login-ul li:nth-child(1) span::before{content:"\e626";}
+#login .login-ul li:nth-child(2) span::before{content:"\e61c";}
+#login .login-ul input{width: 8.125rem;height: 100%;outline: none;border: none;background: transparent;}
+#login .yanzheng{width: 9.375rem;height: 1.25rem;background: url(../images/yanzheng-bgi.png) repeat;margin: 0 auto;display: flex;justify-content: space-around;}
+#login .login{width: 10.0rem;background: orange;color: white;line-height: 1rem;text-align: center;margin-top: 0.46875rem;font-size: 0.4375rem;outline: none;border: none;}
+#login .login a{color: white;}
+#login .other{width: 9.375rem;display: flex;justify-content: space-between;margin: 0 auto;}
+#login .other li{color: darkred;font-size: 0.3125rem;}

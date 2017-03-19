@@ -1,0 +1,79 @@
+@font-face {font-family: 'tiantianguoyuan-detail';src: url('../font/icomoon.woff') format("truetype");}
+body{background: ;}
+#detail .search-box{width: 10.0rem;height: 1.25rem;}
+#detail .search{width: 10.0rem;height: 0.8125rem;padding: 0.21875rem 0;background-color: #41A931;list-style: none;display: flex;justify-content: space-between;position: fixed;top: 0;z-index: 2}
+#detail .search li span{font-family: "tiantianguoyuan-detail";font-size: 0.5rem;width: 0.9375rem;height: 0.9375rem;color: #eef7ea;line-height: 0.9375rem;margin: 0 0.15625rem;}
+#detail .home-icon::before{content:"\e60b";}
+#detail .cart-icon::before{content:"\e60d";}
+#detail .mine-icon::before{content:"\e60c";}
+#detail .back-icon::before{content:"\e61d";}
+#detail .search li:nth-child(2){height: 0.9375rem;font-size: 0.5rem;color: white;line-height: 0.9rem;}
+
+#detail .detail-top li{border-bottom: 0.03125rem solid silver;}
+/*轮播图*/
+#detail .swiper-container{width: 10.0rem;height: 6.875rem;}
+#detail .swiper-container .swiper-slide img{width: 10.0rem;height: 6.875rem;}
+
+#detail .list-li-div{width: 9.375rem;height: 3.4375rem;padding: 0.3125rem;position: relative;}
+#detail .list-li-div>*{margin: 0.3125rem 0;}
+#detail .list-li-div h4{color: #999;}
+#detail .list-li-div h2{color: orange;}
+#detail .cart-count{border-radius: ;position: absolute;right: 0.3125rem;top: 0.625rem;background:#f1f1f1;}
+#detail .cart-count td{width: 0.84375rem;height: 0.84375rem;border: 0.03125rem solid #ddd;font-size: 0.625rem;color: gray;text-align: center;}
+#detail .count-num input{width: 0.84375rem;height: 0.84375rem;outline: none;border: none;background: white;text-align: center;font-size: 0.5rem;font-weight: bold;}
+#detail .button{height: 0.625rem;padding: 0.1875rem 0.375rem;font-size: 0.4375rem;color: white;text-align: center;line-height: 0.625rem;border-radius: 0.09375rem;position: absolute;bottom: 0.3125rem;}
+#detail .add{width: 2.1875rem;background: orange;right: 3.2rem;}
+#detail .buy{width: 1.75rem;background: darkred;right: 0.3125rem;}
+#detail .buy a{color: #fff;}
+
+#detail .add-cart{width: 8.75rem;height: 3.75rem ;background: rgba(0, 0, 0, .7);position: fixed;top: -3.75rem;left: 6.25%;z-index: 5;border-radius: 0.15625rem;opacity: 0;}
+#detail .add-cart p{height: 0.625rem;text-align: center;font-size: 0.5rem;color: #f1f1f1;margin: 0.25rem 0;}
+
+
+#detail .cut-module{width: 10.0rem;display: flex;justify-content: space-between;position: relative;margin-top: 0.25rem;}
+#detail .module-li{width: 50%;height: 1.3rem;background: #fff;font-size: 0.4375rem;text-align: center;line-height: 1.3rem;border-bottom: 0.03125rem solid silver;}
+#detail .ul-info{width: 10.0rem;display:;position: absolute;top: 1.5rem;left: 0.0rem;}
+#detail .ul-info .table-info{width: 9.6875rem;color: black;position: relative;left: 0.15625rem;}
+#detail .table-info tr:nth-child(even){background: white;}
+#detail .table-info td{height: 1.25rem;border: 0.03125rem solid #999;}
+#detail .table-info tr td:nth-child(1){width: 2.4375rem;}
+#detail .table-info tr td:nth-child(2){width: 7.125rem;}
+#detail .detail-img {width: 10rem;height: 10.0rem;}
+#detail .detail-img img{width: 10rem;height: 10.0rem;}
+#detail .pleasure{width: 10.0rem;position: absolute;left: 0;background: #fff;}
+#detail .pleasure li:nth-child(1){height: 4.0625rem;width: 8.75rem;padding: 0.46875rem;display: flex;justify-content: space-between;align-items: center;}
+#detail .pleasure .good{width: 1.875rem;height: 1.875rem;background: #00c574;border: 0.125rem solid orange;border-radius: 50%;}
+#detail .good{font-family: "tiantianguoyuan-detail";font-size: 0.9375rem;}
+#detail .good::before{content:"\e602";}
+#detail .progress{width:6.875rem;height: 100%;color: orange;}
+#detail .progress progress{color: orange;}
+
+#detail .icon{font-family: "tiantianguoyuan-detail";width: 1.09375rem;height: 1.09375rem;background: #ec3d40;color: white;font-size: 0.5625rem;text-align: center;line-height: 1.09375rem;border: 0.09375rem solid white;border-radius: 50%;position: fixed;bottom: 2.5rem;right: 0.46875rem;opacity: .6;}
+#detail .up{bottom: 4rem;display: none;}
+#detail .cart::before{content:"\e60d";}
+#detail .up::before{content:"\e604";}
+#detail .blank{height: 9.375rem;color: orange;}
+
+#detail .class1{background: rgba(159, 105, 65, .7);color: #fff;}
+#detail .class2{background: #ffff;color: #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+<div id="detail">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+			<a href="#/class">
+				<span class="back-icon"></span>
+			</a>
+		</li>
+		<li>
+			产品详情
+		</li>
+
+		<li>
+			<a href="#/cart">
+				<span class="cart-icon"></span>
+			</a>
+			<a href="#/mine">
+				<span class="mine-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+	
+	<ul class="detail-top">
+		<li>
+			<!-- 轮播图 -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="javascript:void(0)">
+			        		<img class="firstImg" src=" " onerror="this.src = '../images/emptyList.png'" >
+			        	</a>
+			        </div>
+			         <div class="swiper-slide">
+			        	<a href="javascript:void(0)">
+			        		<img src="../images/swiper2.jpg" onerror="this.src = '../images/emptyList.png'" alt="" >
+			        	</a>
+			        </div>
+			         <div class="swiper-slide">
+			        	<a href="javascript:void(0)">
+			        		<img src="../images/swiper4.jpg" onerror="this.src = '../images/emptyList.png'" alt="" >
+			        	</a>
+			        </div>
+
+		    	</div>
+			    <!-- 分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+
+			<div class="list-li-div">
+				<h3>{{ detailCtrl.getProduct.name }}</h3>
+				<h4>规格：{{ detailCtrl.getProduct.guige }}</h4>
+				<h2>￥{{ detailCtrl.getProduct.price * detailCtrl.productNum }}</h2>
+				<table class="cart-count" cellpadding="0" cellspacing="0">
+					<tr> 
+						<td class="num-minus" ng-click="detailCtrl.mul()">-</td>
+						<td class="count-num"><input type="text" value="1"
+						disabled="disable" ng-model="detailCtrl.productNum"></td>
+						<td class="num-add" ng-click="detailCtrl.add()">+</td>
+					</tr>
+				</table>
+				<div class="button add" ng-click="detailCtrl.addCart()">加入购物车</div>
+				<div class="button buy" ng-click="detailCtrl.addCart()"><a href="#/cart">立即购买</a></div>
+			</div>
+		</li>
+	</ul>
+	<div class="add-cart">
+		<p>操作成功！</p>
+		<hr>
+		<p>恭喜您，商品已加入购物车！</p>	
+	</div>
+	<!-- 模块切换 -->
+	<ul class="cut-module">
+		<li class="module-li detail-info" ng-class="{true : 'class1',false : 'class2' }[detailCtrl.liFlag]" ng-click="detailCtrl.changeModule()"><span>详细信息</span>
+			<ul class="ul-info" ng-show="detailCtrl.liFlag">
+				<li>
+					<table class="table-info" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>产地</td>
+							<td>{{ detailCtrl.getProduct.chandi }}</td>
+						</tr>
+						<tr>
+							<td>销售规格</td>
+							<td>{{ detailCtrl.getProduct.guige }}</td>
+						</tr>
+						<tr>
+							<td>商品单重</td>
+							<td>{{ detailCtrl.getProduct.danzhong }}</td>
+						</tr>
+						<tr>
+							<td>储藏方法</td>
+							<td>{{ detailCtrl.getProduct.chucang }}</td>
+						</tr>
+						<tr>
+							<td>营养元素</td>
+							<td>{{ detailCtrl.getProduct.yingyang }}</td>
+						</tr>
+					</table>
+				</li>
+				<li class="detail-img" ng-repeat="imgSrc in detailCtrl.imgSrc track by $index">
+					<img ng-src="{{ imgSrc }}" alt="">
+				</li>
+			</ul>
+		</li>
+		<li class="module-li consumer-judge" ng-class="{false : 'class1',true : 'class2'}[detailCtrl.liFlag]" ng-click="detailCtrl.changeModule()">用户评价
+			<ul class="pleasure" ng-hide="detailCtrl.liFlag">
+				<li>
+					<div class="good">
+					</div>
+					<div class="progress">
+						<span>很好</span><progress value="90" max="100"></progress><span>90%</span></br>	
+						<span>一般</span><progress value="7" max="100"></progress><span>7%</span></br>	
+						<span>失望</span><progress value="3" max="100"></progress><span>3%</span>
+					</div>
+				</li>
+				<li class="blank">
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="icon cart" ng-click="detailCtrl.addCart()"></div>
+	<div class="icon up" ng-click="detailCtrl.clickUp()">
+	</div>
+</div>
+
+
+
+

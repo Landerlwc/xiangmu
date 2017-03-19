@@ -1,0 +1,45 @@
+<div id="class">
+	<ul class="search">
+		<li>
+			<a href="#/home">
+				<span class="home-icon"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#/search">
+				<div>寻找鲜果</div>
+			</a>
+		</li>
+		<li>
+			<a href="#/cart">
+				<span class="cart-icon"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#/mine">
+				<span class="mine-icon"></span>
+			</a>
+		</li>
+	</ul>
+	<div class="search-box"></div>
+
+	<div class="class-main">
+		<ul class="class-left-ul">
+			<li ng-repeat="data in classCtrl.productData" ng-click="classCtrl.changeData(data.title)">{{ data.title }}</li>
+		</ul>
+		<ul class="class-right-ul">
+			<li class="class-detail-li" ng-repeat="detail in classCtrl.productDetail">
+				<a href="#/detail/{{ detail.productId }}">
+					<img ng-src="{{ detail.imgSrc }}" alt="">
+					<p>{{ detail.name }}</p>
+				</a>
+			</li>
+			<li class="class-detail-li">
+				<a href="#/home">
+					<img src="../images/add.png" height="210" width="210" alt="">
+					<p>全部</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

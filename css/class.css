@@ -1,0 +1,21 @@
+@font-face {font-family: 'tiantianguoyuan-class';src: url('../font/icomoon.woff') format("truetype");}
+/*search部分*/
+#class{background: white;}
+#class .search-box{width: 10.0rem;height: 1.25rem;}
+#class .search{width: 10.0rem;height: 0.8125rem;padding: 0.21875rem 0;background-color: #41A931;list-style: none;display: flex;justify-content: space-around;position: fixed;top: 0;}
+#class .search span{font-family: "tiantianguoyuan-class";font-size: 0.5rem;width: 0.9375rem;height: 0.9375rem;color: #eef7ea;line-height: 0.9375rem;}
+#class .home-icon::before{content:"\e60b";}
+#class .cart-icon::before{content:"\e60d";}
+#class .mine-icon::before{content:"\e60c";}
+#class .search li div{width: 6.25rem;height: 0.8125rem;font-size: 0.4375rem;color: #999;background: rgba(246, 246, 246, .8);border-radius: 0.09375rem/0.09375rem;line-height: 0.8125rem;}
+
+#class .class-main{width: 10.0rem;height: 16.1875rem;background: white;display: flex;}
+
+#class .class-left-ul{height: 16.1875rem;width: 2.5rem;background: #f1f1f1;overflow-y: scroll;opacity: .8;}
+#class .class-left-ul li{width: 2.4375rem;border: 0.03125rem solid silver;text-align: center;line-height: 1.4rem;}
+#class .class-left-ul li:hover{border-left:0.15625rem solid darkgreen;background: white;color: green;font-size: 0.375rem;}
+#class .class-right-ul{width: 7.5rem;list-style: none;overflow-y: scroll;display: flex;flex-wrap: wrap;align-content: flex-start;}
+#class .class-detail-li{width: 2.1875rem;height: 2.1875rem;text-align: center;margin:0.625rem 0.15625rem;}
+#class .class-detail-li a{color: gray;}
+#class .class-detail-li img{width: 2.125rem;height: 2.125rem;}
+

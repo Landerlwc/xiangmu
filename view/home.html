@@ -1,0 +1,221 @@
+<div id="home">
+	<div class="home-top">
+		<div class="location">上海</div>
+		<a href="#/search">
+			<div class="search">
+				<span>新鲜水果、生鲜</span>
+			</div>
+		</a>
+	</div>
+
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <!-- <div class="swiper-slide" ng-repeat="swiperImg in homeCtrl.getSwiperImg">
+	        	<a href="javascript:void(0)">
+	        		<img ng-src="{{ swiperImg.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png" height="240" width="242" >
+	        	</a>
+	        </div>
+ -->
+	        <div class="swiper-slide">
+	        	<a href="javascript:void(0)">
+	        		<img src="../images/swiper1.jpg" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png" >
+	        	</a>
+	        </div>
+	         <div class="swiper-slide">
+	        	<a href="javascript:void(0)">
+	        		<img src="../images/swiper2.jpg" onerror="this.src = '../images/emptyList.png'" alt="" >
+	        	</a>
+	        </div>
+	         <div class="swiper-slide">
+	        	<a href="javascript:void(0)">
+	        		<img src="../images/swiper3.jpg" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png" >
+	        	</a>
+	        </div>
+	         <div class="swiper-slide">
+	        	<a href="javascript:void(0)">
+	        		<img src="../images/swiper4.jpg" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png" >
+	        	</a>
+	        </div>
+
+    	</div>
+	    <!-- 分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+
+	<!-- menu -->
+	<ul class="menu-ul">
+		<li class="menu-li" ng-repeat="item in homeCtrl.menuLi">
+			<a href="#/classclass">
+				<img ng-src="{{ item.imgSrc }}"  onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+				<p>{{ item.imgIfo }}</p>
+			</a>
+		</li>
+	</ul>
+	
+	<!-- letters条 -->
+	<div class="letters">
+		<ul class="letters-ul">
+			<li class="letters-li-L"><span>天天快报</span>&nbsp;&nbsp;|</li>
+			<li class="letters-li-R">
+				<div class="swiper-container">
+	  				<div class="swiper-wrapper">
+	        			<div class="swiper-slide">
+	        				<a href="#/class">【立省10元】墨西哥牛油果regular 39.9元6个</a>
+	        			</div>
+	        			<div class="swiper-slide">
+	        				<a href="#/class">【买5斤送1斤】优选新疆库尔勒香梨49元，买5斤送1斤</a>
+	        			</div>
+	        			<div class="swiper-slide">
+	        				<a href="#/class">【新人专享】19.9元专享商品，注册送50元券~</a>
+	        			</div>
+			    	</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- under-Letters -->
+	<a href="#/class" class="under-Letters">
+		<img src="https://imgqn6.fruitday.com/images/2017-02-12/7e687a49da13c0967f92b6927a866c98.jpg" onerror="this.src = '../images/emptyList.png'" alt="天天果园">
+	</a>
+
+	<!-- cate-title -->
+	<a href="#/class" class="cate-title">
+		进店必Buy·限时秒杀·包邮&nbsp;>
+	</a>
+
+	<!-- special-topic -->
+	<div class="special-topic topic-mustBuy">
+		<a href="#/class"><img class="special-topic-img"  ng-src="{{ homeCtrl.mustBuy.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png"></a>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.mustBuy.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul
+	</div>
+
+	<!-- newGoods -->
+	<div class="new-goods">
+		<p class="special-title">新品抢鲜 · 今日上新 ></p>
+		<ul class="new-goods-ul">
+			<li class="new-goods-li" ng-repeat="goods in homeCtrl.newGoods">
+				<a href="#/class">
+					<div class="new-goods-div">
+						<img  ng-src="{{ goods.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+
+						<ul class="goods-div-ul">
+							<li class="goods-name">{{ goods.goodsName }}</li>
+							<li class="introduce">{{ goods.introduce }}</li>
+							<li class="price">{{ goods.price }}</li>
+						</ul>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div> 
+
+	<p class="special-title">精品专区</p>
+	<div class="special-topic topic-valentineDay">
+		<a href="#/class"><img class="special-topic-img"  ng-src="{{ homeCtrl.valentineDay.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png"></a>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.valentineDay.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="special-topic topic-orangeItems">
+		<a href="#/class"><img class="special-topic-img"  ng-src="{{ homeCtrl.orangeItems.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png"></a>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.orangeItems.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="special-topic topic-meatSteak">
+		<a href="#/class"><img class="special-topic-img"  ng-src="{{ homeCtrl.meatSteak.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png"></a>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.meatSteak.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="special-topic topic-breakFast">
+		<a href="#/class"><img class="special-topic-img"  ng-src="{{ homeCtrl.breakFast.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png"></a>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.breakFast.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="fresh">
+		<p class="special-title">冰冷鲜区<span>0~4冷藏冰鲜 每日限量开售</span></p>
+		<ul class="special-topic-ul">
+			<li ng-repeat="topicList in homeCtrl.breakFast.topicList">
+				<a href="#/class">
+					<div class="topic-detail">
+						<img  ng-src="{{ topicList.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+						<span class="cheap">{{ topicList.cheap }}</span>
+						<p class="introduce">{{ topicList.introduce }}</p>
+						<span class="price">{{ topicList.price }}</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+
+	<ul id="goods-list">
+		<li class="new-goods-li goods-list-li" ng-repeat="goods in homeCtrl.goodsList">
+				<a href="#/class">
+					<div class="new-goods-div">
+						<img  ng-src="{{ goods.imgSrc }}" onerror="this.src = '../images/emptyList.png'" alt="../images/emptyList.png">
+
+						<ul class="goods-div-ul">
+							<li class="goods-name">{{ goods.goodsName }}</li>
+							<li class="introduce">{{ goods.introduce }}</li>
+							<li class="price">{{ goods.price }}</li>
+						</ul>
+					</div>
+				</a>
+			</li>
+	</ul>
+
+	<div class="blank"></div>
+</div>

@@ -1,0 +1,37 @@
+@font-face {font-family: 'tiantianguoyuan-submit';src: url('../font/icomoon.woff') format("truetype");}
+#submit .search-box{width: 10.0rem;height: 1.5625rem;}
+#submit .search{width: 9.6875rem;height: 0.8125rem;padding: 0.21875rem 0.15625rem;background-color: #41A931;list-style: none;display: flex;justify-content: space-between;position: fixed;top: 0;} 
+#submit .search li span{font-family: "tiantianguoyuan-submit";font-size: 0.5rem;width: 0.9375rem;height: 0.9375rem;color: #eef7ea;line-height: 0.9375rem;}
+#submit .back-icon::before{content:"\e63a";}
+#submit .home-icon::before{content:"\e60b";}
+
+#submit .submit-ul{background: white;width: 9.375rem;list-style: none;margin: 0.3125rem auto;}
+#submit .submit-ul li{width: 8.75rem;height: 1.25rem;border-top: 1px solid #ddd;font-size: 0.375rem;line-height: 1.25rem;margin: 0 0.3125rem;}
+#submit .submit-ul li:nth-child(1){border-top: none;}
+#submit .submit-li a{color: #000;}
+#submit .submit-li a span:nth-child(1){font-family: 'tiantianguoyuan-submit';font-size: 0.4375rem;color: #999;}
+#submit .submit-li a span:nth-child(1)::before{content:'\e60c';}
+#submit .tel{color: orange;}
+
+#submit .cancel{width: 9.375rem;background: orange;color: white;line-height: 1.09375rem;text-align: center;font-size: 0.4375rem;border-radius: 0.09375rem/0.09375rem;margin: 0 auto;}
+
+#submit .blank{width: 9.375rem;height: 1.875rem;background: white;margin:0.3125rem auto;border-radius: 0.09375rem/0.09375rem;}
+
+#submit .alert{width: 8.125rem;height: 4.0625rem;padding: 0.3125rem;background: rgba(0, 0, 0, .6);border-radius: 0.15625rem;position: fixed;top: 30%;left: 6.25%;text-align: center;}
+
+#submit .alert p{font-size: 0.5rem;color: #fdfdfd;text-align: center;line-height: 0.9375rem;margin: 0.625rem 0;}
+#submit .alert button{width: 2.5rem;height: 1.09375rem;background: #fdfdfd;font-size: 0.5rem;color: gray;text-align: center;line-height: 0.9375rem;margin: 0.15625rem 0.15625rem;outline: none;border-radius: 0.15625rem;}
+
+#submit .price{width: 9.5rem;height: 1.09375rem;background: #f8f8f8;padding: 0.25rem;position: fixed;bottom: 0;}
+#submit .price button{width: 2.34375rem;height: 1.09375rem;background: orange;color: white;font-size: 0.4375rem;text-align: center;line-height: 1.09375rem;position: absolute;right: 0.25rem;outline: none;border-radius: 0.09375rem;}
+#submit .price-count{color: orange;font-size: 0.5rem;}
+#submit .price-prefe{color: #999;font-size: 0.375rem;}
+
+#submit .cart-list{width: 10.0rem;}
+#submit .cart-list-li{width:9.0625rem;height: 2.65625rem;padding: 0.15625rem;margin: 0.28rem auto;border-bottom: 0.03125rem solid #ddd;position: relative;display: flex;justify-content: space-between;}
+#submit .list-li-img{width: 2.65625rem;height: 2.65625rem;}
+#submit .label{height: 0.625rem;color: white;background: red;padding: 0.09375rem;position: absolute;top: 0.15625rem;left: 0.15625rem;}
+#submit .list-li-div{width: 6.40625rem;height: 100%;padding: 0 0.15625rem;}
+#submit .list-li-div>*{margin: 0.15625rem 0;}
+#submit .list-li-div h4{color: #999;}
+#submit .list-li-div h2{color: orange;}
